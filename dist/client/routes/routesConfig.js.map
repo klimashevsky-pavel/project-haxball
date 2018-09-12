@@ -1,1 +1,0 @@
-{"version":3,"file":"routesConfig.js","sourceRoot":"","sources":["../../../src/client/routes/routesConfig.ts"],"names":[],"mappings":";;AACA,oDAA+C;AAC/C,uDAAkD;AASlD,IAAM,MAAM,GAAuB;IAC/B;QACI,IAAI,EAAE,OAAO;QACb,EAAE,EAAE,CAAC;QACL,SAAS,EAAE,cAAI;KAClB;IACD;QACI,IAAI,EAAE,QAAQ;QACd,EAAE,EAAE,CAAC;QACL,SAAS,EAAE,eAAK;KACnB;CAEJ,CAAC;AAEF,kBAAe,MAAM,CAAC"}

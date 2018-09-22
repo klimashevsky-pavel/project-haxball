@@ -13,14 +13,13 @@ const routes: IRouteObjectType[] = [
     {
         path: '/home',
         id: 1,
-        component: Home,
+        component: Home
     },
     {
         path: '/about',
         id: 2,
-        component: About,
-    },
-
+        component: About
+    }
 ];
 
 export default routes;

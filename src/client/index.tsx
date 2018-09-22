@@ -6,4 +6,4 @@ import AppContainer from 'client/components/appContainer/AppContainer';
 
 import 'client/styles/main.scss';
 
-ReactDOM.render((<AppContainer />), document.getElementById('app'));
+ReactDOM.render(<AppContainer />, document.getElementById('app'));

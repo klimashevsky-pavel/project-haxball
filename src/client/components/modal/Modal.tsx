@@ -4,7 +4,7 @@ import * as mt from 'client/constants/ModalTypes';
 
 const modalActionTypes = {
     [mt.SIGN_IN_MODAL]: sat.SIGN_IN,
-    [mt.SIGN_UP_MODAL]: sat.SIGN_UP,
+    [mt.SIGN_UP_MODAL]: sat.SIGN_UP
 };
 
 interface IModalProps {
@@ -13,7 +13,6 @@ interface IModalProps {
 }
 
 export default class Modal extends React.Component<IModalProps> {
-
     public renderHeader() {
         const { modalType, onCloseModal } = this.props;
         return (
@@ -22,7 +21,7 @@ export default class Modal extends React.Component<IModalProps> {
                     <span>{modalType}</span>
                 </div>
                 <div className="modal-header__close-button">
-                    <span className="fa fa-times" onClick={onCloseModal}></span>
+                    <span className="fa fa-times" onClick={onCloseModal} />
                 </div>
             </div>
         );
@@ -31,9 +30,7 @@ export default class Modal extends React.Component<IModalProps> {
     public render() {
         return (
             <div className="modal">
-                <div className="modal-window">
-                    {this.renderHeader()}
-                </div>
+                <div className="modal-window">{this.renderHeader()}</div>
             </div>
         );
     }

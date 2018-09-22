@@ -7,7 +7,6 @@ import errorHandler from 'errorhandler';
 import { createRoutes } from 'server/utils/createRoutes';
 
 class Server {
-
     public app: express.Application;
 
     public static bootstrap(): Server {
@@ -15,13 +14,16 @@ class Server {
     }
 
     public configServer(): void {
-        const MONGODB_CONNECTION_URL: string = 'mongodb://localhost:27017/project-game';
+        const MONGODB_CONNECTION_URL: string =
+            'mongodb://localhost:27017/project-game';
 
         this.app.use(bodyParser.json());
 
-        this.app.use(bodyParser.urlencoded({
-            extended: true,
-        }));
+        this.app.use(
+            bodyParser.urlencoded({
+                extended: true
+            })
+        );
 
         this.app.use(cookieParser());
 
@@ -32,7 +34,6 @@ class Server {
         this.configRoutes();
 
         this.app.use(errorHandler());
-
     }
 
     public configRoutes(): void {
@@ -46,7 +47,6 @@ class Server {
         this.app = express();
         this.configServer();
     }
-
 }
 
 const { app } = Server.bootstrap();

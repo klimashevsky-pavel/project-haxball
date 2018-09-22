@@ -1,4 +1,4 @@
-export interface INavigationTabConfig  {
+export interface INavigationTabConfig {
     name: string;
     route: string;
 }
@@ -6,18 +6,18 @@ export interface INavigationTabConfig  {
 export const NavigationTabConfig: INavigationTabConfig[] = [
     {
         name: 'Home',
-        route: '/home',
+        route: '/home'
     },
     {
         name: 'Scoreboard',
-        route: '/scoreboard',
+        route: '/scoreboard'
     },
     {
         name: 'Play',
-        route: '/play',
+        route: '/play'
     },
     {
         name: 'About',
-        route: '/about',
-    },
+        route: '/about'
+    }
 ];

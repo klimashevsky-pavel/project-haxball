@@ -8,10 +8,14 @@ interface INavigationItemProps {
 }
 
 class NavigationItem extends React.Component<INavigationItemProps> {
-
     public render() {
-        const { options: { name, route }, isActive } = this.props;
-        const className = isActive ? 'navigation-item active' : 'navigation-item';
+        const {
+            options: { name, route },
+            isActive
+        } = this.props;
+        const className = isActive
+            ? 'navigation-item active'
+            : 'navigation-item';
         return (
             <Link className={className} to={route}>
                 <span>{name}</span>

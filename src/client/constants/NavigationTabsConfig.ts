@@ -6,7 +6,7 @@ export interface INavigationTabConfig  {
 export const NavigationTabConfig: INavigationTabConfig[] = [
     {
         name: 'Home',
-        route: '/',
+        route: '/home',
     },
     {
         name: 'Scoreboard',

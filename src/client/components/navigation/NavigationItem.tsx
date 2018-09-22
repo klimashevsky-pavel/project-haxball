@@ -2,20 +2,20 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { INavigationTabConfig } from 'client/constants/NavigationTabsConfig';
 
-import './navigation.css';
-
 interface INavigationItemProps {
     options: INavigationTabConfig;
+    isActive: boolean;
 }
 
 class NavigationItem extends React.Component<INavigationItemProps> {
 
     public render() {
-        const { options: { name, route } } = this.props;
+        const { options: { name, route }, isActive } = this.props;
+        const className = isActive ? 'navigation-item active' : 'navigation-item';
         return (
-            <div className="navigation-item" >
-                <Link to={route} >{name}</Link>
-            </div>
+            <Link className={className} to={route}>
+                <span>{name}</span>
+            </Link>
         );
     }
 }

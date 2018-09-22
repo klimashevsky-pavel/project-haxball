@@ -1,6 +1,6 @@
 require('@babel/polyfill');
 require('@babel/preset-env');
-require("@babel/register")({
+require('@babel/register')({
     presets: ['@babel/preset-env'],
     extensions: ['.ts'],
 });

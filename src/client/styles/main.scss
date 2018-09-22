@@ -1,0 +1,21 @@
+// ----------VARIABLES------------
+@import './variables.scss';
+//----------STYLES---------------
+@import './header.scss';
+@import './modal.scss';
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-page {
+    color: blue;
+
+    &:hover {
+        color: red;
+    }
+}

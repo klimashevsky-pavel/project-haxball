@@ -1,6 +1,6 @@
-import * as bodyParser from "body-parser";
+import * as bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import cookieParser from "cookie-parser";
+import cookieParser from 'cookie-parser';
 import express from 'express';
 import errorHandler from 'errorhandler';
 

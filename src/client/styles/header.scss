@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    height: 64px;
+    width: 100%;
+}
+
+.header-title {
+    color:#eee;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    width: 15%;
+    background: $murky-blue-theme;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.header-title__ball {
+    width: 37px;
+    height: 36px;
+    margin: 5px;
+    background-image: url(http://www.clker.com/cliparts/b/q/N/I/Y/7/soccer-ball-hi.png);
+    background-size: cover;
+}
+
+.navigation-panel {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}
+
+.navigation-item {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background: $light-blue-theme;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        color: $pink-theme;
+    }
+
+    &.active {
+        border-bottom: 3px solid $murky-blue-theme;
+    }
+}
+
+.header-auth {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $murky-blue-theme;
+    font-size: 24px;
+    color: #eee;
+}
+
+.header-auth__link {
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        color: $pink-theme;
+    }
+}

@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 import { IUserModel } from 'server/inerfaces/modelInterfaces/user';
 import { USER } from 'server/constants/ModelNames';
 
